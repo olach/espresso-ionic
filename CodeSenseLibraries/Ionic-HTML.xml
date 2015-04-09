@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CodeSense Libraries simply define lists of completions, categorized by keys. They don't define any criteria for when they should be used; this is the domain of a CodeSense Provider.
+
+-->
+<codesense version="1.0">
+	
+	<set name="olach.com.github.ionic.html.tags">
+	
+		<!-- Default behavior -->
+		<behavior>
+			<append-dynamic>
+				<matched-suffix>(\s*(?:/?>|[a-zA-Z]+=))|(?:/?[^>]|[^\s/])|$</matched-suffix>
+				<transform-into>(?1::>$0&lt;/${completion}>)</transform-into>
+			</append-dynamic>
+		</behavior>
+		
+		<completion string="ion-content" />
+		<completion string="ion-refresher" />
+		<completion string="ion-pane" />
+		<completion string="ion-checkbox" />
+		<completion string="ion-radio" />
+		<completion string="ion-toggle" />
+		<completion string="ion-header-bar" />
+		<completion string="ion-footer-bar" />
+		<completion string="ion-list" />
+		<completion string="ion-item" />
+		<completion string="ion-delete-button" />
+		<completion string="ion-reorder-button" />
+		<completion string="ion-option-button" />
+		<completion string="ion-modal-view" />
+		<completion string="ion-nav-view" />
+		<completion string="ion-view" />
+		<completion string="ion-nav-bar" />
+		<completion string="ion-nav-back-button" />
+		<completion string="ion-nav-buttons" />
+		<completion string="ion-nav-title" />
+		<completion string="ion-popover-view" />
+		<completion string="ion-scroll" />
+		<completion string="ion-infinite-scroll">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*(?:/?>|[a-zA-Z]+=))|(?:/?[^>]|[^\s/])|$</matched-suffix>
+					<transform-into>(?1:: on-infinite="$1">$0&lt;/${completion}>)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="ion-side-menus" />
+		<completion string="ion-side-menu-content" />
+		<completion string="ion-side-menu">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*(?:/?>|[a-zA-Z]+=))|(?:/?[^>]|[^\s/])|$</matched-suffix>
+					<transform-into>(?1:: side="$1">$0&lt;/${completion}>)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="ion-slide-box" />
+		<completion string="ion-slide" />
+		<completion string="ion-slide-pager" />
+		<completion string="ion-spinner" />
+		<completion string="ion-tabs" />
+		<completion string="ion-tab" />		
+	</set>
+	
+	<!-- TODO: nav-transition on links -->
+	<!-- TODO: nav-direction on links -->
+	
+</codesense>

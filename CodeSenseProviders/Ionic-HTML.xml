@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CodeSense Providers map contexts in a document to possible completions. The actual completions are defined in the various CodeSense libraries, categorized using their key. A CodeSense Provider tells Espresso what CodeSense libraries are active in the current context. One of these XML files can contain many <provider> elements.
+
+-->
+<codesense>
+	
+	<!-- HTML tags -->
+	<provider>
+		<selector>language-root.html *, tag.open.html, tag.self-closing.html</selector>
+		<completions>olach.com.github.ionic.html.tags</completions>
+		<complete-match capture="2">(&lt;)([a-zA-Z0-9-]*)</complete-match>
+		<require-suffix>(\s|>|^)</require-suffix>
+	</provider>
+	
+	<!-- HTML attributes -->
+	<provider>
+		<selector>tag.open.html:has-child(name:capture(tag)) > attribute-name, tag.open.html:has-child(name:capture(tag)) > punctuation.definition.end, tag.open.html:has-child(name:capture(tag))</selector>
+		<completions>olach.com.github.ionic.html.tag.${tag}.attributes</completions>
+		<completions>olach.com.github.ionic.html.tag.standard-attributes</completions>
+		<complete-match capture="2">(\s)([a-zA-Z0-9-]*)</complete-match>
+		<require-suffix>(\s|=|>|^)</require-suffix>
+	</provider>
+	
+	<!-- HTML attribute values for generic elements -->
+	<provider>
+		<selector>tag.open.html > attribute-name:capture(attribute) + punctuation.separator + string > punctuation.definition.end</selector>
+		<completions>olach.com.github.ionic.html.tag.attribute-values.${attribute}</completions>
+		<complete-match capture="2">("|')([a-zA-Z0-9._-]*)</complete-match>
+	</provider>
+	
+	<!-- HTML attribute values for specific elements -->
+	<provider>
+		<selector>tag.open.html:has-child(name:capture(tag)) > attribute-name:capture(attribute) + punctuation.separator + string > punctuation.end</selector>
+		<completions>olach.com.github.ionic.html.tag.${tag}.attribute-values.${attribute}</completions>
+		<completions>olach.com.github.ionic.html.tag.${tag}.attribute-values.${attribute}</completions>
+		<complete-match capture="2">("|')([a-zA-Z0-9._/-]*)</complete-match>
+	</provider>
+	
+</codesense>

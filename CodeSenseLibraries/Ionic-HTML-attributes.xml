@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CodeSense Libraries simply define lists of completions, categorized by keys. They don't define any criteria for when they should be used; this is the domain of a CodeSense Provider.
+
+-->
+<codesense version="1.0">
+
+	<behavior>
+		<append-dynamic>
+			<matched-suffix>(\s*=)|[^=]</matched-suffix>
+			<transform-into>(?1::="$1"$0)</transform-into>
+		</append-dynamic>
+	</behavior>
+	
+	<set name="olach.com.github.ionic.html.tag.standard-attributes">
+		<completion string="data-tap-disabled" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-content.attributes">
+		<completion string="delegate-handle" ranking="1" />
+		<completion string="direction" ranking="1" />
+		<completion string="locking" ranking="1" />
+		<completion string="padding" ranking="1" />
+		<completion string="scroll" ranking="1" />
+		<completion string="overflow-scroll" ranking="1" />
+		<completion string="scrollbar-x" ranking="1" />
+		<completion string="scrollbar-y" ranking="1" />		
+		<completion string="start-x" ranking="1" />
+		<completion string="start-y" ranking="1" />
+		<completion string="on-scroll" ranking="1" />
+		<completion string="on-scroll-complete" ranking="1" />	
+		<completion string="has-bouncing" ranking="1" />
+		<completion string="scroll-event-interval" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-refresher.attributes">
+		<completion string="on-refresh" ranking="1" />
+		<completion string="on-pulling" ranking="1" />
+		<completion string="pulling-icon" ranking="1" />
+		<completion string="spinner" ranking="1" />
+		<completion string="refreshing-icon" ranking="1" />
+		<completion string="disable-pulling-rotation" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-header-bar.attributes">
+		<completion string="align-title" ranking="1" />
+		<completion string="no-tap-scroll" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-footer-bar.attributes">
+		<completion string="align-title" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-list.attributes">
+		<completion string="delegate-handle" ranking="1" />
+		<completion string="type" ranking="1" />
+		<completion string="show-delete" ranking="1" />
+		<completion string="show-reorder" ranking="1" />
+		<completion string="can-swipe" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-item.attributes">
+		<completion string="collection-repeat" ranking="1">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::="${1:item} in ${2:items}"$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-reorder-button.attributes">
+		<completion string="on-reorder" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-nav-view.attributes">
+		<completion string="name" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-view.attributes">
+		<completion string="view-title" ranking="1" />
+		<completion string="cache-view" ranking="1" />
+		<completion string="hide-back-button" ranking="1" />
+		<completion string="hide-nav-bar" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-nav-bar.attributes">
+		<completion string="delegate-handle" ranking="1" />
+		<completion string="align-title" ranking="1" />
+		<completion string="no-tap-scroll" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-nav-buttons.attributes">
+		<completion string="side" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-scroll.attributes">
+		<completion string="delegate-handle" ranking="1" />
+		<completion string="direction" ranking="1" />
+		<completion string="locking" ranking="1" />
+		<completion string="paging" ranking="1" />
+		<completion string="on-refresh" ranking="1" />
+		<completion string="on-scroll" ranking="1" />
+		<completion string="scrollbar-x" ranking="1" />
+		<completion string="scrollbar-y" ranking="1" />
+		<completion string="zooming" ranking="1" />
+		<completion string="min-zoom" ranking="1" />
+		<completion string="max-zoom" ranking="1" />
+		<completion string="has-bouncing" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-infinite-scroll.attributes">
+		<completion string="on-infinite" ranking="1" />
+		<completion string="distance" ranking="1" />
+		<completion string="spinner" ranking="1" />
+		<completion string="icon" ranking="1" />
+		<completion string="immediate-check" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-side-menus.attributes">
+		<completion string="enable-menu-with-back-views" ranking="1" />
+		<completion string="delegate-handle" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-side-menu-content.attributes">
+		<completion string="drag-content" ranking="1" />
+		<completion string="edge-drag-threshold" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-side-menu.attributes">
+		<completion string="side" ranking="1" />
+		<completion string="is-enabled" ranking="1" />
+		<completion string="width" ranking="1" />
+		<completion string="expose-aside-when" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.a.attributes">
+		<completion string="menu-toggle" ranking="1" />
+		<completion string="menu-close" ranking="1">
+			<behavior>
+				<append-static></append-static>
+			</behavior>
+		</completion>
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.button.attributes">
+		<completion string="menu-toggle" ranking="1" />
+		<completion string="menu-close" ranking="1">
+			<behavior>
+				<append-static></append-static>
+			</behavior>
+		</completion>
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-slide-box.attributes">
+		<completion string="delegate-handle" ranking="1" />
+		<completion string="does-continue" ranking="1" />
+		<completion string="auto-play" ranking="1" />
+		<completion string="slide-interval" ranking="1" />
+		<completion string="show-pager" ranking="1" />
+		<completion string="pager-click" ranking="1" />
+		<completion string="on-slide-changed" ranking="1" />
+		<completion string="active-slide" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-spinner.attributes">
+		<completion string="icon" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-tabs.attributes">
+		<completion string="delegate-handle" ranking="1" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.ion-tab.attributes">
+		<completion string="title" ranking="1" />
+		<completion string="href" ranking="1" />
+		<completion string="icon" ranking="1" />
+		<completion string="icon-on" ranking="1" />
+		<completion string="icon-off" ranking="1" />
+		<completion string="badge" ranking="1" />
+		<completion string="badge-style" ranking="1" />
+		<completion string="on-select" ranking="1" />
+		<completion string="on-deselect" ranking="1" />
+		<completion string="hidden" ranking="1" />
+		<completion string="disabled" ranking="1" />
+	</set>
+	
+	<!-- TODO: data-tap-disabled -->
+		
+</codesense>

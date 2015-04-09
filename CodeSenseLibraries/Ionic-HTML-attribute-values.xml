@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CodeSense Libraries simply define lists of completions, categorized by keys. They don't define any criteria for when they should be used; this is the domain of a CodeSense Provider.
+
+-->
+<codesense version="1.0">
+	
+	<!-- Generic attribute completions -->
+	
+	<set name="olach.com.github.ionic.html.tag.attribute-values.data-tap-disabled">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	
+	<set name="olach.com.github.ionic.html.tag.attribute-values.menu-toggle">
+		<completion string="left" />
+		<completion string="right" />
+	</set>
+	
+	
+	<!-- Element-specific attribute completions -->
+	
+	<!-- <ion-content> -->
+	<set name="olach.com.github.ionic.html.tag.ion-content.attribute-values.direction">
+		<completion string="x" />
+		<completion string="y" />
+		<completion string="xy" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-content.attribute-values.locking">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-content.attribute-values.padding">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-content.attribute-values.scroll">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-content.attribute-values.overflow-scroll">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-content.attribute-values.scrollbar-x">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-content.attribute-values.scrollbar-y">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-content.attribute-values.has-bouncing">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	
+	
+	<!-- <ion-refresher> -->
+	<set name="olach.com.github.ionic.html.tag.ion-refresher.attribute-values.spinner">
+		<completion string="android" />
+		<completion string="ios" />
+		<completion string="ios-small" />
+		<completion string="bubbles" />
+		<completion string="circles" />
+		<completion string="crescent" />
+		<completion string="dots" />
+		<completion string="lines" />
+		<completion string="ripple" />
+		<completion string="spiral" />
+		<completion string="none" />
+	</set>
+	
+	
+	<!-- <ion-header-bar> -->
+	<set name="olach.com.github.ionic.html.tag.ion-header-bar.attribute-values.align-title">
+		<completion string="left" />
+		<completion string="right" />
+		<completion string="center" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-header-bar.attribute-values.no-tap-scroll">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	
+	
+	<!-- <ion-footer-bar> -->
+	<set name="olach.com.github.ionic.html.tag.ion-footer-bar.attribute-values.align-title">
+		<completion string="left" />
+		<completion string="right" />
+		<completion string="center" />
+	</set>
+	
+	
+	<!-- <ion-list> -->
+	<set name="olach.com.github.ionic.html.tag.ion-list.attribute-values.show-delete">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-list.attribute-values.show-reorder">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-list.attribute-values.can-swipe">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	
+	
+	<!-- <ion-view> -->
+	<set name="olach.com.github.ionic.html.tag.ion-view.attribute-values.cache-view">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-view.attribute-values.hide-back-button">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-view.attribute-values.hide-nav-bar">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	
+	
+	<!-- <ion-nav-bar> -->
+	<set name="olach.com.github.ionic.html.tag.ion-nav-bar.attribute-values.align-title">
+		<completion string="left" />
+		<completion string="right" />
+		<completion string="center" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-nav-bar.attribute-values.no-tap-scroll">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	
+	
+	<!-- <ion-nav-buttons> -->
+	<set name="olach.com.github.ionic.html.tag.ion-nav-buttons.attribute-values.side">
+		<completion string="primary" />
+		<completion string="secondary" />
+		<completion string="left" />
+		<completion string="right" />
+	</set>
+	
+	
+	<!-- <ion-scroll> -->
+	<set name="olach.com.github.ionic.html.tag.ion-scroll.attribute-values.direction">
+		<completion string="x" />
+		<completion string="y" />
+		<completion string="xy" />
+	</set>	
+	<set name="olach.com.github.ionic.html.tag.ion-scroll.attribute-values.locking">
+		<completion string="true" />
+		<completion string="false" />
+	</set>	
+	<set name="olach.com.github.ionic.html.tag.ion-scroll.attribute-values.paging">
+		<completion string="true" />
+		<completion string="false" />
+	</set>	
+	<set name="olach.com.github.ionic.html.tag.ion-scroll.attribute-values.scrollbar-x">
+		<completion string="true" />
+		<completion string="false" />
+	</set>	
+	<set name="olach.com.github.ionic.html.tag.ion-scroll.attribute-values.scrollbar-y">
+		<completion string="true" />
+		<completion string="false" />
+	</set>	
+	<set name="olach.com.github.ionic.html.tag.ion-scroll.attribute-values.zooming">
+		<completion string="true" />
+		<completion string="false" />
+	</set>	
+	<set name="olach.com.github.ionic.html.tag.ion-scroll.attribute-values.has-bouncing">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	
+	
+	<!-- <ion-infinite-scroll> -->	
+	<set name="olach.com.github.ionic.html.tag.ion-infinite-scroll.attribute-values.immediate-check">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	
+	
+	<!-- <ion-side-menus> -->	
+	<set name="olach.com.github.ionic.html.tag.ion-side-menus.attribute-values.enable-menu-with-back-views">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	
+	
+	<!-- <ion-side-menu-content> -->	
+	<set name="olach.com.github.ionic.html.tag.ion-side-menu-content.attribute-values.drag-content">
+		<completion string="true" />
+		<completion string="false" />
+	</set>	
+	<set name="olach.com.github.ionic.html.tag.ion-side-menu-content.attribute-values.edge-drag-threshold">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	
+	
+	<!-- <ion-side-menu> -->	
+	<set name="olach.com.github.ionic.html.tag.ion-side-menu.attribute-values.side">
+		<completion string="left" />
+		<completion string="right" />
+	</set>	
+	<set name="olach.com.github.ionic.html.tag.ion-side-menu.attribute-values.is-enabled">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-side-menu.attribute-values.expose-aside-when">
+		<completion string="large" />
+		 <!-- TODO: Media queries is also allowed -->
+	</set>
+	
+	
+	<!-- <ion-slide-box> -->	
+	<set name="olach.com.github.ionic.html.tag.ion-slide-box.attribute-values.does-continue">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-slide-box.attribute-values.auto-play">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	<set name="olach.com.github.ionic.html.tag.ion-slide-box.attribute-values.show-pager">
+		<completion string="true" />
+		<completion string="false" />
+	</set>
+	
+	
+	<!-- <ion-spinner> -->
+	<set name="olach.com.github.ionic.html.tag.ion-spinner.attribute-values.icon">
+		<completion string="android" />
+		<completion string="ios" />
+		<completion string="ios-small" />
+		<completion string="bubbles" />
+		<completion string="circles" />
+		<completion string="crescent" />
+		<completion string="dots" />
+		<completion string="lines" />
+		<completion string="ripple" />
+		<completion string="spiral" />
+		<completion string="none" />
+	</set>
+		
+</codesense>
