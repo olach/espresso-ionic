@@ -61,6 +61,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 	</set>
 	
 	<set name="olach.com.github.ionic.html.tag.ion-item.attributes">
+		<completion string="ng-href" ranking="1" />
 		<completion string="collection-repeat" ranking="1">
 			<behavior>
 				<append-dynamic>
